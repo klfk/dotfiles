@@ -1,0 +1,2 @@
+-- This file is no longer needed - LSP configuration is in after/plugin/lsp.lua
+-- You can delete this file
