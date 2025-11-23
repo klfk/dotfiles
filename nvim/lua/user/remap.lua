@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>n", ":cd $HOME/notes | e .<CR>", { desc = "Go to notes" })
 vim.keymap.set("n", "<leader>pr", ":cd $HOME/projects | e .<CR>", { desc = "Go to projects" })
-
+vim.keymap.set('n', '<leader>j', '<C-]>', { desc = "Jump to Tag" })
 -- Number toggles
 local function toggle_nums()
   if vim.wo.number then

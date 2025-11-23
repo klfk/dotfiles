@@ -11,20 +11,8 @@ start-at-login = true
 
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
-    alt-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
-        do script
-        activate
-    end tell'
-    '''
 
-    # i3 wraps focus by default
-    alt-j =         'focus --boundaries-action wrap-around-the-workspace left'
-    alt-k =         'focus --boundaries-action wrap-around-the-workspace down'
-    alt-l =         'focus --boundaries-action wrap-around-the-workspace up'
-    alt-semicolon = 'focus --boundaries-action wrap-around-the-workspace right'
-
-    alt-shift-j = 'move left'
+    alt-j = 'move left'
     alt-shift-k = 'move down'
     alt-shift-l = 'move up'
     alt-shift-semicolon = 'move right'
@@ -35,7 +23,18 @@ start-at-login = true
 
     alt-f = 'fullscreen'
 
-    alt-s = 'layout v_accordion' # 'layout stacking' in i3
+    alt-d = 'exec-and-forget open -a Finder'
+    alt-b = 'exec-and-forget open -a /Applications/Firefox.app'
+    alt-a = 'exec-and-forget open -a /Applications/Alacritty.app'
+    alt-t = 'exec-and-forget open -a /Applications/Microsoft\ Teams.app'
+    alt-o = 'exec-and-forget open -a /Applications/Microsoft\ OneNote.app'
+    alt-p = 'exec-and-forget open -a /Applications/PDF\ Expert.app'
+    alt-y = 'exec-and-forget open -a /Applications/System\ Settings.app'
+    alt-comma = 'exec-and-forget open -a /Applications/Spotify.app'
+    
+    alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
+    
+    #alt-s = 'layout v_accordion' # 'layout stacking' in i3
     alt-w = 'layout h_accordion' # 'layout tabbed' in i3
     alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 
@@ -55,16 +54,9 @@ start-at-login = true
     cmd-alt-4 = 'workspace 4'
     cmd-alt-5 = 'workspace 5'
 
-    cmd-alt-b = 'workspace B'
-    cmd-alt-t = 'workspace T'
-    cmd-alt-w = 'workspace W'
-
-    alt-c = 'mode choose'
-
     alt-shift-c = 'reload-config'
 
     alt-m = 'mode move'
-    alt-r = 'mode resize'
 
 [workspace-to-monitor-force-assignment]
 
@@ -95,24 +87,4 @@ start-at-login = true
     enter = 'mode main'
     esc = 'mode main'
 
-[mode.choose.binding]
-    1 = 'workspace 1'
-    2 = 'workspace 2'
-    3 = 'workspace 3'
-    4 = 'workspace 4'
-    5 = 'workspace 5'
-                     
-    b = 'workspace B'
-    t = 'workspace T'   
-    w = 'workspace W'    
-    enter = 'mode main'
-    esc = 'mode main'
-
-[mode.resize.binding]
-    h = 'resize width -50'
-    j = 'resize height +50'
-    k = 'resize height -50'
-    l = 'resize width +50'
-    enter = 'mode main'
-    esc = 'mode main'
 

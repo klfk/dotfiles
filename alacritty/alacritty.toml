@@ -17,12 +17,16 @@ size = 28
 family = "FiraCode Nerd Font"
 style = "Regular"
 
-
 # make Option behave like normal Alt key (keys below are made for Swiss german layout)
 [[keyboard.bindings]]
 key = "Key3"
 mods = "Alt"
 chars = "#"
+
+[[keyboard.bindings]]
+key = "Key7"
+mods = "Shift | Alt"
+chars = "\\"
 
 [[keyboard.bindings]]
 key = "a" 
@@ -172,6 +176,7 @@ opacity = 1.0
 decorations = "none"
 dynamic_padding = true
 option_as_alt = "Both"
+startup_mode = "Fullscreen"
 
 [window.padding]
 x = 0
