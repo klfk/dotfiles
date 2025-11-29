@@ -23,6 +23,14 @@ key = "Key3"
 mods = "Alt"
 chars = "#"
 
+
+# swiss key layout, @
+[[keyboard.bindings]]
+key = "g"
+mods = "Alt"
+chars = "@"
+
+
 [[keyboard.bindings]]
 key = "Key7"
 mods = "Shift | Alt"
@@ -176,7 +184,7 @@ opacity = 1.0
 decorations = "none"
 dynamic_padding = true
 option_as_alt = "Both"
-startup_mode = "Fullscreen"
+#startup_mode = "SimpleFullscreen"
 
 [window.padding]
 x = 0

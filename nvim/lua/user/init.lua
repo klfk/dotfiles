@@ -1,2 +1,0 @@
--- This file is no longer needed - everything is loaded from init.lua
--- You can delete this file
